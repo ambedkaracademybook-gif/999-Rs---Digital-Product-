@@ -4,12 +4,10 @@ import mobileAppImg from '../assets/images/tnpsc_mobile_app_mockup_1790190085701
 
 interface WhatYouGetSectionProps {
   onOpenCheckout: () => void;
-  onOpenSampleModal: (category?: string) => void;
 }
 
 export const WhatYouGetSection: React.FC<WhatYouGetSectionProps> = ({
   onOpenCheckout,
-  onOpenSampleModal,
 }) => {
   const [selectedItemIndex, setSelectedItemIndex] = useState<number | null>(null);
 
@@ -113,18 +111,9 @@ export const WhatYouGetSection: React.FC<WhatYouGetSectionProps> = ({
                   </div>
                 )}
 
-                <div className="mt-5 flex items-center justify-between text-xs font-semibold text-neutral-400 pt-3 border-t border-neutral-800/60">
-                  <button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      onOpenSampleModal(item.title);
-                    }}
-                    className="text-amber-400 hover:text-amber-300 transition flex items-center gap-1"
-                  >
-                    <span>View Sample</span>
-                    <ArrowRight className="h-3.5 w-3.5" />
-                  </button>
-                  <span className="text-neutral-300">Click card for detail</span>
+                <div className="mt-4 flex items-center justify-between text-xs font-semibold text-neutral-400 pt-3 border-t border-neutral-800/60">
+                  <span className="text-[#E5B83B]">{isSelected ? 'Tap to collapse' : 'Tap to expand detail'}</span>
+                  <span className="text-neutral-500">Included in ₹999</span>
                 </div>
               </div>
             );

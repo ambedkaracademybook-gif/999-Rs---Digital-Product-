@@ -1,17 +1,11 @@
 import React from 'react';
-import { ArrowRight, BookOpen, CheckCircle2, Smartphone, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Smartphone, Sparkles } from 'lucide-react';
 import tnpscLogo from '../assets/images/tnpsc_official_emblem_1790184894876.jpg';
 import { WistiaPlayerComponent } from './WistiaPlayerComponent';
 
 const CTA_URL = 'https://www.ambedkaracademy.in/courses/648764';
 
-interface HeroSectionProps {
-  onOpenSampleModal: () => void;
-}
-
-export const HeroSection: React.FC<HeroSectionProps> = ({
-  onOpenSampleModal,
-}) => {
+export const HeroSection: React.FC = () => {
   return (
     <section id="hero" className="relative overflow-hidden pt-5 pb-10 sm:pt-8 sm:pb-14 md:pt-10 md:pb-16 border-b border-neutral-900 bg-black text-neutral-100">
       {/* Background ambient lighting */}
@@ -78,15 +72,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <span className="whitespace-nowrap">👉 GET APP ACCESS – ₹999</span>
                 <ArrowRight className="h-4 w-4 stroke-[3] shrink-0" />
               </a>
-
-              <button
-                type="button"
-                onClick={onOpenSampleModal}
-                className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-neutral-900 border border-neutral-800 px-3.5 py-2.5 sm:py-3 text-xs font-semibold text-neutral-300 hover:text-white hover:bg-neutral-800 transition whitespace-nowrap cursor-pointer"
-              >
-                <BookOpen className="h-3.5 w-3.5 text-[#E5B83B] shrink-0" />
-                <span className="whitespace-nowrap">மாதிரி பக்கங்கள்</span>
-              </button>
             </div>
 
             {/* Quick Pricing Micro-line */}

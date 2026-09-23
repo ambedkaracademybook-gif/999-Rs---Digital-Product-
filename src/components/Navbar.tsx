@@ -62,12 +62,9 @@ export const Navbar: React.FC = () => {
         {/* Brand Lockup */}
         <a 
           href="#hero" 
-          className="font-display text-lg sm:text-xl font-bold tracking-tight text-white hover:text-[#E5B83B] transition-colors flex items-center gap-2"
+          className="font-display text-lg sm:text-xl font-bold tracking-tight text-white hover:text-[#E5B83B] transition-colors"
         >
-          <span className="flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-lg bg-gradient-to-r from-[#F5D061] to-[#E5B83B] text-black font-black text-xs sm:text-sm shadow-[0_0_12px_rgba(229,184,59,0.4)]">
-            T
-          </span>
-          <span className="truncate">TNPSC PREP</span>
+          <span className="truncate">Ambedkar Academy</span>
         </a>
 
         {/* Primary Action Button: Single Line Text CTA linking to https://www.ambedkaracademy.in/courses/648764 */}
