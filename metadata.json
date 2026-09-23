@@ -1,0 +1,6 @@
+{
+  "name": "TNPSC Complete Preparation System",
+  "description": "Clean, conversion-focused landing page for the ₹999 TNPSC Complete Preparation System covering Group 1, 2/2A, and 4.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
